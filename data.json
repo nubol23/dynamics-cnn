@@ -1,0 +1,21 @@
+{
+  "b":
+  {
+    "diagram":
+    {
+      "bifurcation": "B",
+      "alpha": -1.5590535687,
+      "beta": 0.0156453845,
+      "gamma": 999999999999,
+      "a": -0.2438532907,
+      "b": -0.0425189943,
+      "k": -1,
+      "initial_condition": [0.00, 0.00, 0.20],
+      "axis": "gamma"
+    },
+    "n_attractors": 6,
+    "eje_regular": [{"start": 0.148, "end": 0.149, "proximity": 7}],
+    "eje_caotico": [{"start": 0.155, "end": 0.157, "proximity": 4},
+                    {"start": 0.170, "end": 0.173, "proximity": 5}]
+  }
+}

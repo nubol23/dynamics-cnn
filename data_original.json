@@ -1,0 +1,137 @@
+{
+  "b":
+  {
+    "diagram":
+    {
+      "bifurcation": "B",
+      "alpha": -1.5590535687,
+      "beta": 0.0156453845,
+      "gamma": 999999999999,
+      "a": -0.2438532907,
+      "b": -0.0425189943,
+      "k": -1,
+      "initial_condition": [0.00, 0.00, 0.20],
+      "axis": "gamma"
+    },
+    "n_attractors": 6,
+    "eje_regular": [{"start": 0.148, "end": 0.149, "proximity": 7}],
+    "eje_caotico": [{"start": 0.155, "end": 0.157, "proximity": 4},
+                    {"start": 0.170, "end": 0.173, "proximity": 5}]
+  },
+  "c":
+  {
+    "diagram":
+    {
+      "bifurcation": "C",
+      "alpha": -4.898979,
+      "beta": 999999999999,
+      "gamma": -0.001180888,
+      "a": -2.501256,
+      "b": -0.9297201,
+      "k": 1,
+      "initial_condition": [0.02, 0.01, 0.00],
+      "axis": "beta"
+    },
+    "n_attractors": 20,
+    "eje_regular": [{"start": -3.5, "end": -3.25, "proximity": 6}],
+    "eje_caotico": [{"start": -3.7, "end": -3.55, "proximity": 4},
+                    {"start": -3.2, "end": -3.15, "proximity": 5}]
+  },
+  "d":
+  {
+    "diagram":
+    {
+      "bifurcation": "D",
+      "alpha": -1.458906,
+      "beta": 999999999999,
+      "gamma": -0.3214346,
+      "a": 1.218416,
+      "b": -0.5128436,
+      "k": -1,
+      "initial_condition": [0.02, 0.01, 0.00],
+      "axis": "beta"
+    },
+    "n_attractors": 15,
+    "eje_regular": [{"start": -0.07, "end": -0.04, "proximity": 6},
+                    {"start": -0.304, "end": -0.28, "proximity": 9}],
+    "eje_caotico": []
+  },
+  "e":
+  {
+    "diagram":
+    {
+        "bifurcation": "E",
+        "alpha": 999999999999,
+        "beta": -1.52061,
+        "gamma": 0,
+        "a": -1.142857,
+        "b": -0.7142857,
+        "k": 1,
+        "initial_condition": [0.02, 0.01, 0.00],
+        "axis": "alpha"
+    },
+    "n_attractors": 15,
+    "eje_regular": [{"start": -9.6, "end": -7.5, "proximity": 1},
+                    {"start": -7.4, "end": -6.95, "proximity": 9}],
+    "eje_caotico": [{"start": -6.5, "end": -4.9, "proximity": 4}]
+  },
+  "g":
+  {
+    "diagram":
+    {
+        "bifurcation": "G",
+        "alpha": 8.4562218418,
+        "beta": 999999999999,
+        "gamma": 0.0051631393,
+        "a": -0.7056296732,
+        "b": -1.1467573476,
+        "k": 1,
+        "initial_condition": [0.00, 0.00, 0.50],
+        "axis": "beta"
+    },
+    "n_attractors": 12,
+    "eje_regular": [{"start": 12.65, "end": 12.76, "proximity": 7},
+                    {"start": 12.86, "end": 13, "proximity": 9}],
+    "eje_caotico": [{"start": 12, "end": 12.15, "proximity": 5},
+                    {"start": 12.5, "end": 12.57, "proximity": 7}]
+  },
+  "h":
+  {
+    "diagram":
+    {
+        "bifurcation": "H",
+        "alpha": 8.4562218418,
+        "beta": 12.0732335925,
+        "gamma": 9999999999999,
+        "a": -0.7056296732,
+        "b": -1.1467573476,
+        "k": 1,
+        "initial_condition": [0.00, 0.00, 0.50],
+        "axis": "gamma"
+    },
+    "n_attractors": 15,
+    "eje_regular": [{"start": 0.024, "end": 0.028, "proximity": 9},
+                    {"start": 0.07, "end": 0.09, "proximity": 4}],
+    "eje_caotico": [{"start": -0.01, "end": 0.023, "proximity": 6},
+                    {"start": 0.03, "end": 0.043, "proximity": 8}]
+  },
+  "i":
+  {
+    "diagram":
+    {
+        "bifurcation": "I",
+        "alpha": 999999999999,
+        "beta": 10.8976626192,
+        "gamma": -0.0447440294,
+        "a": -1.1819730746,
+        "b": -0.6523354182,
+        "k": 1,
+        "initial_condition": [0.02, 0.01, 0.00],
+        "axis": "alpha"
+    },
+    "n_attractors": 15,
+    "eje_regular": [{"start": 6.2054, "end": 6.49, "proximity": 9}],
+    "eje_caotico": [{"start": 6.8, "end": 7.4, "proximity": 6},
+                    {"start": 7.8, "end": 8.2467, "proximity": 5}]
+  }
+}
