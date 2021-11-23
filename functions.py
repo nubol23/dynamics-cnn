@@ -5,6 +5,7 @@ from typing import List, Tuple, TypedDict, Union
 import matplotlib.pyplot as plt
 import numpy as np
 from numba import njit
+from numpy.random._generator import Generator
 from tqdm import tqdm
 
 plt.rcParams["agg.path.chunksize"] = 100000
@@ -154,6 +155,7 @@ class AxisRange(TypedDict):
 
 
 def save_data(
+    rng: Generator,
     base_path: str,
     diagram_data: Union[Diagram, None],
     label: str,
@@ -184,7 +186,8 @@ def save_data(
             os.makedirs(f"{base_path}/images")
         # Save image
         for n in range(num_images):
-            elevation, azimuth = np.random.uniform(0, 180), np.random.uniform(0, 360)
+            # elevation, azimuth = np.random.uniform(0, 180), np.random.uniform(0, 360)
+            elevation, azimuth = rng.uniform(0, 180), rng.uniform(0, 360)
             ax = plt.axes(projection="3d")
 
             ax.plot3D(points[:, 0], points[:, 1], points[:, 2], "black", linewidth=0.5)
@@ -195,6 +198,7 @@ def save_data(
 
 
 def chua_integrator(
+    rng: Generator,
     diagram_data: Diagram,
     n_attractors: int,
     axis_ranges: List[AxisRange],
@@ -206,6 +210,7 @@ def chua_integrator(
     num_images=1,
 ):
     """
+    :param rng: random generator (new way of numpy to handle seeding)
     :param diagram_data: dictionary with control parameters similar to:
                          "bifurcation": "B",
                          "alpha": -1.5590535687,
@@ -258,6 +263,7 @@ def chua_integrator(
             )
 
             save_data(
+                rng,
                 base_path,
                 diagram_data,
                 label,

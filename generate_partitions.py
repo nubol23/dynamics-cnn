@@ -6,5 +6,5 @@ def main():
     regular_img_paths = os.listdir("")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

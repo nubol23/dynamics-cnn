@@ -16,7 +16,7 @@ def main():
     )
 
     num_images = parser.parse_args().n_images
-    np.random.seed(parser.parse_args().seed)
+    rng = np.random.default_rng(parser.parse_args().seed)
 
     with open("data.json") as f:
         data = load(f)
@@ -29,6 +29,7 @@ def main():
         chaotic_axis = data[k]["eje_caotico"]
         print(f"{k=}")
         chua_integrator(
+            rng,
             diagram,
             n_attractors,
             regular_axis,
@@ -40,6 +41,7 @@ def main():
             save_points=False,
         )
         chua_integrator(
+            rng,
             diagram,
             n_attractors,
             chaotic_axis,
