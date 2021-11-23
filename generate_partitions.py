@@ -12,8 +12,8 @@ def partition(
     rng: Generator, paths: List[str], train_proportion: float, val_proportion: float
 ):
     rng.shuffle(paths)
-    n_train = int(round(len(paths) * train_proportion))
-    n_val = int(round(len(paths) * val_proportion))
+    n_train = int(len(paths) * train_proportion)
+    n_val = int(len(paths) * val_proportion)
 
     train = paths[:n_train]
     val = paths[n_train : n_train + n_val]
